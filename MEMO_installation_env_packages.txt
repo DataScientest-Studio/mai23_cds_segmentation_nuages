@@ -1,0 +1,42 @@
+Petit mémo que je partage pour l'installation d'un environnement virtuel : 
+
+J'ai installé miniconda (Miniconda3-latest-Windows-x86_64.exe): 
+/!\ cocher add to path! /!\
+
+Ensuite ouvrir une invit de command (cmd) :
+
+1/ Creer un environnement virtuel : 
+> conda create -n NOM_ENVIRONNEMENT python=3.8
+(on peut prendre la derniere version stable de python)
+
+2/ Activer l'environnement créé :
+> conda activate NOM_ENVIRONNEMENT
+
+Pour le desactiver : 
+> conda deactivate
+
+3/ Installer des packages : 
+> conda install pandas
+> conda install numpy
+> conda install scikit-learn
+> conda install matplotlib
+> conda install scipy
+> conda install seaborn
+> conda install bokeh
+> conda install -c conda-forge opencv
+> conda install -c conda-forge statsmodels
+
+4/ Lister les packages dans un environnement une fois activer :
+> conda list
+
+5/ Avant d'installer Tensorflow - Keras / Pytorch 
+(les deux ne semblent pas faire bon ménage et risque de faire bugger l'environnement)
+Cloner un environnement stable et créer un environnement distinct :
+Avec TensorFlow : 
+> conda create --name tfEnv --clone NOM_ENVIRONNEMENT_STABLE
+> conda activate tfEnv
+> conda install -c conda-forge tensorflow
+Avec Pytorch: 
+> conda create --name torchEnv --clone NOM_ENVIRONNEMENT_STABLE
+> conda activate torchEnv
+> conda install -c pytorch torchvision torchaudio -c pytorch
