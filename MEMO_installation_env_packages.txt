@@ -40,3 +40,5 @@ Avec Pytorch:
 > conda create --name torchEnv --clone NOM_ENVIRONNEMENT_STABLE
 > conda activate torchEnv
 > conda install -c pytorch torchvision torchaudio -c pytorch
+
+%% SCC
