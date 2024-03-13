@@ -1,7 +1,7 @@
-# mai23_cds_segmentation_nuages
+# Segmentation de nuages avec Yolo v1
 
 Ce répertoire regroupe l'ensemble des ressources qui vous permettront d'éffectuer l'exploration du jeu de données, sa préparation ainsi que la conception d'un modèle basé l'algorithme Yolo.
-Les Notebooks présentés ci-après on été conçus sous Anaconda / JupyterLab :
+<br><br>Les Notebooks présentés ci-après on été conçus sous Anaconda / JupyterLab :
 
 1. **Explotation.ipynb** : Il prend en entrée le dataset source brut clouds_0_large.csv. Ce Notebook fait appel au module de support utils_explo_prepa.ipynb
 2. **Preparation.ipynb** : Il prend en entrée le dataset issu de l'exploration (clouds_1_large.csv) après que ce dernier ait été mis en forme. Ce Notebook fait appel au module de support utils_explo_prepa.ipynb
