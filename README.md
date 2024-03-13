@@ -6,3 +6,4 @@ Ce dépôt GitHub contient les travaux réalisés dans le cadre de la formation 
 Il est organisé comme suit :
 - Le dossier unet_full_stack met à disposition l'ensemble des étapes nécessaires depuis la préparation des datasets jusqu'à la restitution visuelle des prédictions
 effectuées via le modèle d'architecture U-Net
+- Le dossier src contient des notebooks pour la conception et l'entraînement des premiers modèles basés sur l'architecture EfficientNet
